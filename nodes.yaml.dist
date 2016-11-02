@@ -1,0 +1,20 @@
+---
+defaults:
+  domain: workstation.local.arbe.io
+  base_box: centos/7
+  osfam: rhel
+  synced_folders:
+    # Common folders
+    - src: ../shared/misc
+      dst: /vagrant/shared/misc
+  provision:
+    - name: basic
+      env:
+        ssh_pubkeys: "ssh-rsa..."
+nodes:
+  node1:
+    ip: 10.42.42.100
+    cpus: 4
+    memory: 2048
+
+# vim: ft=yaml

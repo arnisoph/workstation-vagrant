@@ -1,0 +1,6 @@
+[submodule "vagrant-assets"]
+	path = vagrant-assets
+	url = https://github.com/bechtoldt/vagrant-assets
+[submodule "vagrant"]
+	path = vagrant
+	url = https://github.com/bechtoldt/iac-vagrant

@@ -59,4 +59,4 @@ test/nodes.yaml
 *.box
 nodes.yaml
 
-shared/misc/private/
+shared/misc/

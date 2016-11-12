@@ -4,15 +4,14 @@ defaults:
   base_box: centos/7
   osfam: rhel
   synced_folders:
-    # Common folders
-    - src: ../shared/misc
-      dst: /vagrant/shared/misc
+    - src: "/Users/ab/Google\ Drive/intern/workstation-vagrant/scripts"
+      dst: /vagrant/shared/misc/scripts
   provision:
     - name: basic
       env:
         ssh_pubkeys: "ssh-rsa..."
 nodes:
-  node1:
+  ws-customer1:
     ip: 10.42.42.100
     cpus: 4
     memory: 2048
